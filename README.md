@@ -1,33 +1,50 @@
-/**
- * Matter JS Project
- * 
- * This project demonstrates the use of Matter.js, a 2D physics engine, to create a dynamic,
- * responsive simulation featuring falling balls and overlayed custom text. The application 
- * adjusts based on the viewport size and uses modern React best practices.
- * 
- * Features:
- * - Dynamic Ball Simulation:
- *   Balls are generated in varying quantities based on screen size (Mobile, Tablet, or Desktop).
- * 
- * - Responsive Design:
- *   The number of physics objects adjusts to the viewport size using a custom hook, `useResponsiveJSX`.
- * 
- * - Interactive Physics:
- *   Users can interact with the balls using their mouse, thanks to the Matter.js `MouseConstraint`.
- * 
- * - Customizable Aesthetic:
- *   Balls have dynamic colors, and the canvas background is styled to a modern, minimalistic design.
- * 
- * - Overlayed Text:
- *   The canvas renders custom, centered text ("Matter JS" and "Explore the World of Physics!") using 
- *   Matter.js's `afterRender` event.
- * 
- * Files:
- * 1. **MatterBoilerplate.js**:
- *    - Handles the core physics simulation using Matter.js.
- *    - Includes the responsive design logic and renders the falling balls and overlayed text.
- * 
- * 2. **useResponsiveJSX.js**:
- *    - A custom React hook that determines the screen size breakpoint (Mobile, Tablet, Desktop).
- *    - Used to dynamically adjust the number of physics objects.
- */
+# Matter JS Project
+<br>
+
+## Overview
+
+The Matter JS Project is a React-based simulation leveraging the Matter.js 2D physics engine to create an interactive, dynamic environment. The project showcases responsive ball physics, customizable aesthetics, and overlayed text rendered using Matter.js's canvas manipulation capabilities.
+
+## Features
+
+- **Dynamic Ball Simulation:** 
+  - Balls are generated dynamically with different colors and realistic physics properties such as friction and restitution.
+  - The number of balls adapts based on screen size (mobile, tablet, or desktop).
+
+- **Interactive Physics:**
+  - Users can interact with the balls using mouse controls via Matter.js's `MouseConstraint`.
+
+- **Responsive Design:** 
+  - Adjusts the simulation dynamically based on viewport size using a custom hook, `useResponsiveJSX`.
+
+- **Customizable Aesthetic:**
+  - Balls have dynamic colors, and the canvas features a minimalistic background with gradient effects.
+
+- **Overlayed Text:**
+  - Custom text is rendered dynamically on the canvas using Matter.js’s `afterRender` event.
+
+## Components
+
+### `MatterBoilerplate.jsx`
+The core component responsible for initializing and managing the Matter.js engine and rendering the simulation.
+
+- **Features:**
+  - Sets up the Matter.js engine, renderer, and physics bodies.
+  - Generates dynamic balls and manages ground and wall collision boundaries.
+  - Implements mouse control for interactivity.
+  - Adjusts canvas size and object positions on window resize.
+
+
+### `useResponsiveJSX.js`
+A custom React hook to provide breakpoints for responsive design.
+
+- **Features:**
+  - Returns breakpoint-specific values for small (mobile), medium (tablet), and large (desktop) screens.
+  - Dynamically updates based on viewport size to optimize the simulation.
+
+
+## Technologies Used
+
+- **React:** For building the user interface and managing components.
+- **Matter.js:** For the 2D physics engine driving the simulation.
+- **CSS:** For basic styling of the container and elements.
