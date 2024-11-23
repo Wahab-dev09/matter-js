@@ -1,6 +1,12 @@
 # Matter JS Project
 <br>
 
+<p align="left">
+ <img src="https://github.com/user-attachments/assets/6d2fc270-0079-4b85-a8bf-2e13e17005a7" alt="Weather Screenshot 4" width="40%" />
+ <img src="https://github.com/user-attachments/assets/3156e0f2-5c2b-465c-8f32-bd3c01301e78" alt="Weather Screenshot 4" width="40%" />
+</p>
+
+
 ## Overview
 
 The Matter JS Project is a React-based simulation leveraging the Matter.js 2D physics engine to create an interactive, dynamic environment. The project showcases responsive ball physics, customizable aesthetics, and overlayed text rendered using Matter.js's canvas manipulation capabilities.
